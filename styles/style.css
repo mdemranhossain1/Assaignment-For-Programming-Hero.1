@@ -6,8 +6,6 @@
   font-variation-settings:
     "wdth" 100;
 }
-
-
 /* nav bar */
 .sign-btn{
     border: none;
@@ -22,6 +20,7 @@ nav{
     justify-content: space-between;
     display : flex;
     padding: 10px 20px;
+   
 }
 .nav-title{
     font-size: 50px;
@@ -30,13 +29,14 @@ nav{
     flex-direction: column;
 }
 .nav-area{
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     padding: 20px 10px;
-    border: none;
+    border-radius: 15px;
     cursor: pointer;
-    
+   background-color: #C6E4D6;
 }
 .explore-btn{
     border: none;
@@ -47,13 +47,94 @@ nav{
     margin-top: 12px;
     display: inline-block;
     width: fit-content;
-   
     font-size: 16px;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
-.hero-image{
-    width: 100%;
-    height: auto;
-    background-image: url(''../assets/'');
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    background: #2E8B57;
+    border-radius: 16px;
 }
+    /* card style */
+.pillars-cards {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   padding: 20px;
+   margin: 40px 0;
+}
+.pillar-card{
+  
+   border-radius: 12px;
+   padding: 20px;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.pillar img {
+   width: 80px;
+   height: 80px;
+   margin-bottom: 15px;
+}
+.pillar h2 {
+   font-size: 24px;
+   margin-bottom: 10px;
+   color: #2E8B57;
+}
+.pillar p {
+   font-size: 16px;
+   color: #333;
+}
+/* future-cards*/
+.future-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 40px 0;
+ }
+.future-card{
+    background-color: #C6E4D6;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ .future-card1{
+    background-color: blueviolet;
+ }
+ .future-card2{
+    background-color: green;
+ }
+ .future-card3{
+    background-color: yellow;
+ }
+ .future img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+ }
+ .future h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2E8B57;
+ }
+ .future p {
+    font-size: 16px;
+    color: #333;
+ }
+.news-hero img{
+   width: 200px;
+   height: auto;
+   border-radius: 10px;
+}
+.news-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    border-radius: 16px;
+}
+
